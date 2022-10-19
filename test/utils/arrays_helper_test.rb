@@ -2,12 +2,6 @@ require "test_helper"
 require "./app/utils/arrays_helper.rb"
 
 class ArraysHelperTest < ActionDispatch::IntegrationTest
-  test "hello world" do
-    helper = ArraysHelper.new();
-    greeting = helper.alternating_each()
-    assert_equal(greeting, "hello world")
-  end 
-
   test "alternates arrays" do
     vals = []
     array1 = [1, 2, 3]
